@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Weather API</title>
+
+    <!-- CSS RESET -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/reset-css@3.0.0/reset.min.css" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+
+</head>
+
+<body>
+    <main>
+        <h2>Weather</h2>
+        <span></span>
+
+        <h1 id="celsius"></h1>
+         <!-- Dropdown -->
+        <select id="location" onchange="getWeatherData(event.target.value)">
+            <option value="Toronto, Canada">Toronto</option>
+            <option value="Winnipeg, Canada">Winnipeg</option>
+            <option value="Montreal, Canada">Montreal</option>
+            <option value="Calgary, Canada">Calgary</option>
+        </select>
+        
+        <h2 id="weatherDesc"></h2>
+        <img id="imgIcon" src="" />
+    </main>
+
+    <!-- JS Script -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
